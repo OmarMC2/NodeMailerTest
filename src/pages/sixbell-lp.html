@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SixBell lp</title>
+</head>
+<body>
+    <style>
+        .form-cont{
+            display: flex;
+            flex-direction: column;
+            padding:30px;
+            background-color: #f3f3f3;
+            max-width: 580px;
+            border-radius: 30px;
+        }
+        .form-cta{
+            color:#23395D;
+            font-size: 35px;
+            font-weight: 400;
+        }
+        .contact-input {
+            font-size: 1rem;
+            line-height: 1.2em;
+            border: 2px solid #E3E3E3;
+            color: #939598;
+            padding: 16px 20px;
+            font-weight: 300;
+            border-radius: 5px;
+            margin-bottom: 9px;
+        }
+        .checkbox-contact{
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 9px 0px 20px 0px;
+
+        }
+        .contact-text{
+            color:#959699;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    </style>
+    <div class="form-cont">
+        <h3 class="form-cta">Confirmar mi asistencia</h3>
+        <input class="contact-input" type="text" placeholder="Email Corporativo" >
+        <label for="contact" class="checkbox-contact">
+            <input type="checkbox" name="contact" id="contacto" >
+            <span class="contact-text">Quiero ser contactado por un especialista de CX</span>
+        </label>
+        <input type="submit" value="Enviar">
+    </div>
+
+    <style>
+        .cta-container{
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            border-radius:10%;
+            width: 100%;
+            padding: 30px 0px;
+            max-width: 600px;
+        }
+        .cta-title,.cta-question, .cta-text, .cta-ubication{
+            
+            padding: 5px 20px;
+        }
+        .cta-title{
+            width: 100%;
+            font-size: 40px;
+            color: #EF2D41;
+            font-weight: 700;
+
+        }
+        .cta-question{
+            font-size: 30px;
+            color: #17609F;
+            font-weight: 500;
+        }
+        .cta-text, .cta-ubication{
+            color: #585858;
+            font-size: 18px;
+        }
+        .cta-ubication:hover{
+            background-color: #f3f3f3;
+        }
+    </style>
+    <div class="cta-container">
+        <h1 class="cta-title">¡Confirma tu asistencia a nuestra cena y cata de tequila!</h1>
+        <span class="cta-question">¿Cuándo?</span>
+        <span class="cta-text">Miércoles 13 de diciembre, 17:00 horas</span>
+        <span class="cta-question">¿Dónde?</span>
+        <a href="https://maps.app.goo.gl/VUfUQbHY3gCBya8N7" class="cta-ubication">Wine Bar by Concours Mondial de Bruxelles. Copenhague 23, Juárez, Cuauhtémoc, 06600, CDMX </a>
+    </div>
+</body>
+</html>
