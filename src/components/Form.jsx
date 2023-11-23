@@ -7,7 +7,8 @@ export default function Form() {
   const [tel, setTel] = useState('');
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState({});
-
+  const [responseMessage, setResponseMessage] = useState("");
+  
   const isNotVoid = (value, fieldName) => {
     if (value.trim() === '') {
       setErrors((prevErrors) => ({
@@ -77,12 +78,13 @@ export default function Form() {
 
     if (verifications()) {
         //main().catch(console.error)
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-              return console.log('Error al enviar el correo electrónico:', error.message);
-            }
-            console.log('Correo electrónico enviado:', info.response);
-          });
+        // transporter.sendMail(mailOptions, (error, info) => {
+        //     if (error) {
+        //       return console.log('Error al enviar el correo electrónico:', error.message);
+        //     }
+        //     console.log('Correo electrónico enviado:', info.response);
+        //   });
+
     } else {
       // Muestra un mensaje de error o realiza alguna otra acción
       console.log('Hay errores en el formulario', errors);
